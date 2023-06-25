@@ -1,0 +1,24 @@
+{
+  "name": "node-cli",
+  "version": "1.0.0",
+  "description": "nodejs cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hari998/node-cli.git"
+  },
+  "keywords": [
+    "node-cli",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Hariom Tiwari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hari998/node-cli/issues"
+  },
+  "homepage": "https://github.com/hari998/node-cli#readme"
+}
