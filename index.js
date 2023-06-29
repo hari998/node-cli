@@ -1,12 +1,26 @@
-// for (let i = 0; i <= 20; i++) {
-//   const dots = ".".repeat(i);
-//   const left = 20 - i;
-//   const empty = " ".repeat(left);
+async function run() {
+  for (let i = 0; i <= 20; i++) {
+    const dots = ".".repeat(i);
+    const left = 20 - i;
+    const empty = " ".repeat(left);
+    process.stdout.write(`\r[${dots}${empty}] ${i * 5}%`);
+    await wait(180);
+  }
+}
+run();
 
-//   /* need to use  `process.stdout.write` becuase console.log print a newline character */
-//   /* \r clear the current line and then print the other characters making it looks like it refresh*/
-//   process.stdout.write(`\r[${dots}${empty}] ${i * 5}%`);
-// }
+async function main() {
+  for (let i = 0; i <= 20; i++) {
+    const dots = ".".repeat(i);
+    const left = 20 - i;
+    const empty = " ".repeat(left);
+    process.stdout.write(`\r[${dots}${empty}] ${i * 5}%`);
+    await wait(80);
+  }
+}
 
+main();
 
-let a 
+function wait(ms) {
+  return new Promise((res) => setTimeout(res, ms));
+}
